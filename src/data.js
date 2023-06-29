@@ -1,14 +1,3 @@
-// import images
-import Slider1 from "./assets/slider1.jpg";
-import Slider2 from "./assets/slider2.jpg";
-import Slider3 from "./assets/slider3.jpg";
-
-// icons
-
-
-// import Video
-import VideoHero from "./assets/video-hero.mp4";
-
 export const navigation = [
   {
     name: "about us",
@@ -40,7 +29,6 @@ export const hero = {
 };
 
 export const company = {
-  image: "/assets/slider1.jpg",
   title: "What is",
   subtitle: "Macro Algae?",
   text: "Macroalgae is a natural resource from the sea with renewable and cost-effective properties",
@@ -63,13 +51,26 @@ export const company = {
   ],
 };
 
-export const farm = {
-  text1:
-    "Macro algae is part of the seaweed family and consists of multi-cell organisms that range in size and form",
-  text2:
-    "The smallest seaweeds are just a few millimeters, but they can grow up to fifty meters in size. ",
-  text3:
-    "They exist in three main categories - green, brown, and red algae - and have a range of different uses and valuable benefits",
+export const slider = {
+  title: "New In Store Now",
+  subtitle: "Get the latest items immediately with promo prices",
+  imagenes: [
+    {
+      description:
+        "Macro algae is part of the seaweed family and consists of multi-cell organisms that range in size and form.",
+      image: "/assets/slider1.jpg",
+    },
+    {
+      description:
+        "The smallest seaweeds are just a few millimeters, but they can grow up to fifty meters in size.",
+      image: "/assets/slider2.jpg",
+    },
+    {
+      description:
+        "They exist in three main categories - green, brown, and red algae - and have a range of different uses and valuable benefits.",
+      image: "/assets/slider3.jpg",
+    },
+  ],
 };
 
 export const info = [
