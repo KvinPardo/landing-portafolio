@@ -135,61 +135,56 @@ export const faqData = {
 
 export const pricing = [
   {
-    title: "Reparación Simple",
-    price: "$15.000",
+    image: '/img/co2.webp',
+    title: "CO2 ABSORPTION CAPACITIES",
     list: [
       {
-        name: "Limpieza",
+        
+        name: "Las algas absorben 2,7 toneladas de CO2 por día por acre (1 acre de un bosque de árboles absorbe 2,5 toneladas por año). Limpia el agua en áreas industriales contaminadas",
       },
       {
-        name: "Cambio de Pasta Térmica",
+        image: '/img/fuel.webp',
+        name: "",
       },
       {
-        name: "Formateado",
+        image: '/img/resource.webp',
+        name: "Las algas absorben 2,7 toneladas de CO2 por día por acre (1 acre de un bosque de árboles absorbe 2,5 toneladas por año). Limpia el agua en áreas industriales contaminadas.",
       },
     ],
     buttonText: "Ver más",
-    delay: "600",
   },
   {
-    title: "Reparación Medium",
-    price: "$25.000",
+    image: "/img/fuel.webp",
+    title: "RAW MATERIAL FOR BIOFUEL PRODUCTS AND OTHER APPLICATIONS",
     list: [
       {
-        name: "Limpieza",
+        name: "Las macroalgas se pueden procesar en bioetanol y usarse como aditivo para combustibles de automóviles y aviones.",
       },
       {
-        name: "Cambio de Pasta Térmica",
+        name: "Las macroalgas se pueden procesar en bioetanol y usarse como aditivo para combustibles de automóviles y aviones.",
       },
       {
-        name: "Formateado",
+        name: "Las macroalgas se pueden procesar en bioetanol y usarse como aditivo para combustibles de automóviles y aviones.",
       },
-      {
-        name: "Entrega mismo día",
-      },
+    
     ],
     buttonText: "Ver más",
-    delay: "800",
   },
   {
-    title: "Reparación Completa",
-    price: "$35.000",
+    image: "/img/resourse.webp",
+    title: "RESOURCE EFFICIENCY",
     list: [
       {
-        name: "Limpieza",
+        name: "Uso eficiente de los recursos para el cultivo en agua salada; no requiere terreno y alto mantenimiento",
       },
       {
-        name: "Cambio de Pasta Térmica",
+        name: "a diferencia de otros biocombustibles",
       },
       {
-        name: "Formateado",
+        name: "materias primas (maíz, caña de azúcar, etc.)",
       },
-      {
-        name: "Entrega Domicilio",
-      },
-    ],
-    buttonText: "Ver más",
 
-    delay: "900",
+    ],
+    buttonText: "Ver más",
   },
 ];

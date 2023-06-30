@@ -11,17 +11,17 @@ const Pricing = () => {
       <div className="container mx-auto">
         {/* text */}
         <div className="text-center mb-7 lg:mb-[70px]">
-          <h2 className="mb-3 lg:mb-[18px] font-bold text-4xl uppercase">
+          {/* <h2 className="mb-3 lg:mb-[18px] font-bold text-4xl uppercase">
             Elige el mejor Plan
           </h2>
-          <p className="max-w-[398px] mx-auto lg:text-2xl">Para tu problema!</p>
+          <p className="max-w-[398px] mx-auto lg:text-2xl">Para tu problema!</p> */}
         </div>
 
         {/* cards */}
         <div className="flex flex-col mx-auto items-center gap-y-12 lg:flex-row lg:gap-x-[35px] px-4 lg:px-0">
           {pricing.map((card, currentIndex) => {
             // Destructure cards
-            const { title, price, list, delay, buttonText } = card;
+            const { title, list, buttonText, image } = card;
             return (
               <div
                 onClick={() => setIndex(currentIndex)}
@@ -36,15 +36,18 @@ const Pricing = () => {
                       : "bg-white text-black "
                   } text-center pt-[50px] pb-[34px] border-b transition relative group-hover:bg-[#262626] group-hover:text-white`}
                 >
-                  <div className="text-[24px] font-medium mb-[10px]">
-                    {title}
+                  <div className="text-[24px] font-medium mb-[10px] flex justify-center items-center">
+                    <img
+                      src={image}
+                      alt=""
+                      className="w-full h-full max-w-[100px]"
+                    />
                   </div>
-                  <div className="text-[34px] font-semibold">{price}</div>
                 </div>
                 <div className="px-[30px] pt-[18px] pb-[30px]">
-                  <p className="text-center mb-6 text-sm">
-                    Encuentra el plan que mejor te acomode
-                  </p>
+                  <div className="text-[34px] font-semibold">
+                    <h3 className="text-[16px]">{title}</h3>
+                  </div>
                   {/* card list */}
                   <ul className="flex flex-col gap-5 mb-10 ">
                     {list.map((item, index) => {
@@ -57,7 +60,7 @@ const Pricing = () => {
                         >
                           <div className="flex items-center gap-4 justify-center p-4">
                             <BsCheck className="w-7 h-7 text-2xl bg-green-100 text-green-300 rounded-full" />
-                            {name}
+                            <p className="text-[14px]">{name}</p>
                           </div>
                         </li>
                       );
