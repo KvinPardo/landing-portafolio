@@ -7,7 +7,7 @@ const Pricing = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <section className="section-lg bg-gray-200">
+    <section className="section-lg bg-gray-200 pt-12 pb-20">
       <div className="container mx-auto">
         {/* text */}
         <div className="text-center mb-7 lg:mb-[70px]">

@@ -37,11 +37,11 @@ const Accordion = ({ accordion }) => {
       <div
         className={`${
           isOpen
-            ? "max-h-[160px] p-5 bg-[#feffa7] border-[#fdff70] border rounded-[10px] drop-shadow-primar my-2"
+            ? "max-h-[160px] p-4 overflow-y-auto bg-[#feffa7] border-[#fdff70] border rounded-[10px] drop-shadow-primar my-2"
             : "max-h-0"
         } h-auto overflow-hidden transition-all`}
       >
-        <p className="overflow-y-visible">{answer}</p>
+        <p className="">{answer}</p>
       </div>
     </motion.div>
   );

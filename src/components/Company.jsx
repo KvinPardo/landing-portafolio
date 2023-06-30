@@ -21,7 +21,7 @@ const Company = () => {
         >
           <motion.h1
             variants={fadeIn("down", "tween", 0.4, 1.1)}
-            className="lg:text-4xl  uppercase text-5xl text-[#FFC000]"
+            className="lg:text-4xl uppercase text-3xl text-[#FFC000]"
           >
             {title}
           </motion.h1>
@@ -40,13 +40,13 @@ const Company = () => {
         </motion.div>
       </div>
 
-      <section className="section">
+      <section className="section p-0 lg:py-12">
         <div className="container mx-auto">
           <div>
-            <h3 className="text-[#5DE1E6] text-4xl font-bold uppercase pt-4">
+            <h3 className="text-[#5DE1E6] text-2xl lg:text-4xl font-bold uppercase">
               Primer Paso
             </h3>
-            <p className="text-[#02175D] text-2xl pb-6">
+            <p className="text-[#02175D] lg:text-2xl pb-6">
               PARA CARBONO AZUL EN PRODUCTOS
             </p>
           </div>
@@ -119,8 +119,8 @@ const Company = () => {
 
       <section className="section p-0 lg:py-[50px]">
         <div className="container mx-auto">
-          <div className="flex justify-end">
-            <h3 className="text-[#5DE1E6] text-4xl font-bold uppercase pt-4 lg:pb-12">
+          <div className="flex w-full">
+            <h3 className="text-[#5DE1E6] text-2xl lg:text-4xl font-bold uppercase py-6 lg:pb-12">
               Segundo Paso
             </h3>
           </div>
