@@ -8,7 +8,7 @@ import { FaYoutube, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="pb-[70px] lg:p-12 bg-[#212529]">
+    <footer className="pb-[70px] lg:p-12 bg-[#02175D]">
       <div className="container mx-auto">
         <div className="flex flex-col justify-between items-center lg:flex-row gap-y-5">
           {/* Logo */}
