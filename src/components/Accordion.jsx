@@ -14,7 +14,7 @@ const Accordion = ({ accordion }) => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className=" bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center"
+        className=" bg-[#d0dec0] cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center"
       >
         <div className="w-full flex justify-between items-center">
           {/* title */}
@@ -23,11 +23,11 @@ const Accordion = ({ accordion }) => {
           <div className="transition-all duration-500">
             {isOpen ? (
               <motion.div initial="initial" animate={{ rotate: 180 }}>
-                <HiOutlineMinus className="text-[28px] text-red-400" />
+                <HiOutlineMinus className="text-[28px] text-[#02175D]" />
               </motion.div>
             ) : (
               <motion.div initial="initial" animate={{ rotate: 0 }}>
-                <HiOutlinePlus className="text-[28px] text-blue-400" />
+                <HiOutlinePlus className="text-[28px] text-green-600" />
               </motion.div>
             )}
           </div>
@@ -37,11 +37,11 @@ const Accordion = ({ accordion }) => {
       <div
         className={`${
           isOpen
-            ? "max-h-[160px] p-8 bg-[#fff7f5] rounded-[10px] drop-shadow-primary my-2"
+            ? "max-h-[160px] p-5 bg-[#feffa7] border-[#fdff70] border rounded-[10px] drop-shadow-primar my-2"
             : "max-h-0"
-        } h-[160px] overflow-hidden transition-all`}
+        } h-auto overflow-hidden transition-all`}
       >
-        <p className="lead leading-[30px] mt-2">{answer}</p>
+        <p className="overflow-y-visible">{answer}</p>
       </div>
     </motion.div>
   );

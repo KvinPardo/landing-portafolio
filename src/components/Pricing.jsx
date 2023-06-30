@@ -32,7 +32,7 @@ const Pricing = () => {
                 <div
                   className={`${
                     index === currentIndex
-                      ? "bg-[#FFC000] text-white "
+                      ? "bg-[#feffa7] text-white "
                       : "bg-white text-black "
                   } text-center pt-[50px] pb-[34px] border-b transition relative group-hover:bg-[#ffbf00c3] group-hover:text-white`}
                 >
@@ -46,7 +46,7 @@ const Pricing = () => {
                 </div>
                 <div className="px-[30px] pt-[18px] pb-[30px] ">
                   <div className="text-[34px] font-semibold">
-                    <h3 className="text-[16px]">{title}</h3>
+                    <h3 className="text-[15px] text-[#02175D]">{title}</h3>
                   </div>
                   {/* card list */}
                   <ul className="flex flex-col gap-1 mb-10 overflow-hidden">
@@ -55,12 +55,12 @@ const Pricing = () => {
                       const { name } = item;
                       return (
                         <li
-                          className="flex items-center  rounded-md"
+                          className="flex items-center rounded-md"
                           key={index}
                         >
                           <div className="flex items-center gap-4 justify-center p-4">
                             {/* <BsCheck className="w-7 h-7 text-2xl bg-green-100 text-green-300 rounded-full" /> */}
-                            <p className="text-[14px]">{name}</p>
+                            <p className="text-[13px]">{name}</p>
                           </div>
                         </li>
                       );

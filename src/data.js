@@ -18,8 +18,8 @@ export const hero = {
 
 export const companyFirst = {
   image: "company-algas1",
-  title: "What is",
-  subtitle: "Macro Algae?",
+  title: "¿QUÉ ES",
+  subtitle: "MACROALGAS?",
   text: "Las macroalgas son un recurso natural del mar con propiedades renovables y rentables.",
   items: [
     {
@@ -70,40 +70,40 @@ export const faqData = {
   boyImg: "/images/faq/boy.svg",
   accordions: [
     {
-      question: "¿Cuál es la experiencia de su servicio técnico informatico?",
+      question: "¿Las microalgas Prime tienen la misma calidad nutricional que las algas vivas?",
       answer:
-        "Debes estar seguro que el técnico que eliges tiene los conocimientos para poder resolver el problema con tu notebook con 20 años reparando notebook en Santiago el servicio tecnico notebook en providencia NBK puede darte la tranquilidad que sabemos lo que estamos haciendo, contamos con una comunidad de clientes antiguos que nos han traído sus notebook desde el primero que compraron él hace más de 20 años, ellos son los que nos recomiendan a diario.",
+        "Como las células están todavía intactas, la nutrición proporcionada por las células secas es al menos igual a la alternativa viva. Debido a las condiciones de producción totalmente controladas, idénticas a lo largo del tiempo, la composición nutricional es mucho más estable y...",
     },
     {
-      question: "¿Qué comunas atienden?",
+      question: "¿Las algas secas son más caras que las pastas u otras formas líquidas?",
       answer:
-        "Trabajamos con todas las comunas de la region metropolitana y aceptamos envios de equipos de fuera de la region metropolitana. La mayoría de nuestros clientes vienen de Providencia, Santiago Centro, Ñuñoa, La reina, Las condes, Vitacura y Lo Barnechea.",
+        "Para comparar los precios de los diferentes productos, la única comparación correcta se basa en la materia seca. La mayoría de las pastas tienen un contenido de materia seca entre el 8 y el 15%. Las algas primarias están completamente secas y por lo tanto mucho más concentradas...",
     },
     {
-      question: "¿Pueden salvar mis archivos en el disco duro en mi notebook?",
+      question: "¿Las células están intactas cuando se alimentan y después de la inmersión?",
       answer:
-        "Incluso si perdiste acceso a tus fotos y archivos nuestros técnicos aun deberían poder ingresar y respaldar tu información, el 80 por ciento de las veces esto es verdad y en raras ocasiones no es posibles.",
+        "Las algas se cultivan en condiciones óptimas y se cosechan y liofilizan con la mayor suavidad posible. El resultado es que las algas Prime se redispersan muy fácilmente en agua para proporcionar una suspensión de algas con células bien separadas e intactas. Estas células...",
     },
     {
-      question: "¿Cuánto va a costar la reparación?",
+      question: "¿Cuál es la estabilidad del agua del producto después de la alimentación?",
       answer:
-        "Es importante conseguir un presupuesto para poder tomar la decisión de reparacion notebook, un presupuesto que no tenga costos escondidos o cobros inesperados es por eso que ofrecemos diagnósticos gratuitos para que tomas la decisión de reparar tu portátil, si podemos asegurarte que nuestros precios son muy competitivos en el mercado para el nivel de garantía que ofrecemos y el tipo de reparación que necesitas.",
+        "Al igual que en la pregunta anterior, debido a las células intactas y a la muy buena separación de las células durante la rehidratación, la lixiviación es baja y las células se mantienen muy bien en suspensión...",
     },
     {
-      question: "¿Que marcas de notebook pueden diagnosticar?",
+      question: "¿Cuánto tiempo puedo mantener la suspensión, una vez que las algas Prime se rehidraten?",
       answer:
-        "reparamos todas las marcas y modelos desde las más conocidas como HP,  DELL,  LENOVO,  HUAWEI,  ASUS,  ACER  hasta las menos vistas en el mercado como Alienware, Xvision, Packerdbell.",
+        "Una vez preparada la suspensión de algas (10-50g/L), esta suspensión puede mantenerse fría (en la nevera) durante al menos 24 horas. Esto significa que la suspensión sólo necesita prepararse una vez al día y puede utilizarse para varias alimentaciones al día...",
     },
     {
-      question: "¿El Diagnóstico es Gratis?",
+      question: "¿Utiliza algún criopreservante u otros aditivos durante el proceso?",
       answer:
-        "Si, es Gratis si usted toma el servicio con nosotros, de lo contrario deberá pagar $9.500",
+      "No se utilizan aditivos durante el proceso. Las microalgas Prime finales sólo consisten en algas puras.",
     },
     {
       question:
-        "¿Tienen Garantía los servicios?",
+        "¿Cuál es el perfil bacteriológico del producto y una vez rehidratado?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum. Voluptatem, fugiat?",
+        "Se hace una vigilancia bacteriológica muy estricta y los productos se comprueban de forma estándar en el recuento total de bacterias, Salmonella, Listeria, Clostridium, ... y Vibrio. Desde el comienzo de nuestras operaciones, nunca encontramos ninguna especie patógena ...",
     },
     {
       question: "¿Emiten Factura por los servicios?",
@@ -116,19 +116,19 @@ export const faqData = {
         "Por supuesto, podemos retirar su notebook o PC, repararlo en nuestras oficinas y despacharlo por un monto adicional de $10.000 a la reparación.",
     },
     {
-      question: "¿Cómo funciona el soporte remoto?",
+      question: "¿Son las algas nutritivas?",
       answer:
-        "El Soporte Remoto se realiza con un software que tomará el control del computador o Notebook para solucionar la mayoría de sus inconvenientes. Solo se podrá acceder previa aceptación del cliente hacia el equipo",
+        "Las algas contienen los mismos macro y micronutrientes que se encuentran en los alimentos. Tienen los macronutrientes proteínas, grasas y carbohidratos y micronutrientes como vitaminas, minerales y polifenoles. De hecho, muchas algas tienen concentraciones más altas de ...",
     },
     {
-      question: "¿Por qué debo confiar en ustedes?",
+      question: "¿Qué se necesita para cultivar microalgas",
       answer:
-        "Somos técnicos con estudios profesionales con más de 20 años de experiencia en el rubro. Estamos constituidos como empresa y tenemos oficinas propias.",
+        "Las microalgas son autótrofas, al igual que las plantas terrestres. Esto significa que pueden producir sus propios alimentos utilizando luz, agua, dióxido de carbono y otros nutrientes como vitaminas y minerales.",
     },
     {
-      question: "¿Dónde puedo llevar mi Notebook o PC?",
+      question: "¿Las microalgas necesitan agua para crecer",
       answer:
-        "Lo puedes traer a Serrano 63, Oficina 42 – Santiago Centro. Estamos a media cuadra de Metro U. de Chile",
+        "Las microalgas crecen tanto en agua dulce como salada, pero eso depende de la especie.",
     },
   ],
 };
@@ -136,7 +136,7 @@ export const faqData = {
 export const pricing = [
   {
     image: '/img/co2.webp',
-    title: "CO2 ABSORPTION CAPACITIES",
+    title: "CAPACIDADES DE ABSORCIÓN DE CO2",
     list: [
       {
         
@@ -155,7 +155,7 @@ export const pricing = [
   },
   {
     image: "/img/fuel.webp",
-    title: "RAW MATERIAL FOR BIOFUEL PRODUCTS AND OTHER APPLICATIONS",
+    title: "MATERIA PRIMA PARA PRODUCTOS DE BIOCOMBUSTIBLES Y OTRAS APLICACIONES",
     list: [
       {
         name: "Las macroalgas se pueden procesar en bioetanol y usarse como aditivo para combustibles de automóviles y aviones.",
@@ -172,7 +172,7 @@ export const pricing = [
   },
   {
     image: "/img/resourse.webp",
-    title: "RESOURCE EFFICIENCY",
+    title: "EFICIENCIA DE LOS RECURSOS",
     list: [
       {
         name: "Uso eficiente de los recursos para el cultivo en agua salada; no requiere terreno y alto mantenimiento",

@@ -8,11 +8,10 @@ const Contact = () => {
           {/* text */}
           <div className="flex-1 flex flex-col justify-center pl-8 ">
             <h2 className="mb-3 lg:mb-7 lg:text-4xl font-bold text-black text-2xl mt-12">
-              Contact us and our specialists will help you
+              Contáctanos
             </h2>
             <p className="mb-7 lg:mb-0 text-2xl text-whgray-400ite drop-shadow-2xl ">
-              Our team of specialists, stand out for being the best in the
-              market, your computer is safe with us
+              Trabajemos juntos hacia un futuro con más algas.
             </p>
           </div>
 
@@ -52,7 +51,9 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             ></textarea>
-            <button className="btn btn-lg bg-gray-600 text-white hoveR:bg-gray-800">Contact Us</button>
+            <button className="btn btn-lg bg-gray-600 text-white hoveR:bg-gray-800">
+              Contact Us
+            </button>
           </form>
         </div>
       </div>
