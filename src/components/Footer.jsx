@@ -18,7 +18,7 @@ const Footer = () => {
           {/* copy right text */}
           <p className="text-white text-lg">&copy; 2023. All rights reserved.</p>
           {/* Social icons */}
-          <div className="flex gap-x-4 text-orange-200 text-lg">
+          <div className="flex gap-x-4 text-black text-lg">
             <div className="w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center shadow-lg cursor-pointer hover:text-gray-400 transition">
               <FaYoutube />
             </div>

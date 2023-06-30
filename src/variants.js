@@ -1,8 +1,8 @@
 export const fadeIn = (direction, type, delay, duration) => {
   return {
     hidden: {
-      x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
-      y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
+      x: direction === 'left' ? 80 : direction === 'right' ? -80 : 0,
+      y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
       opacity: 0,
     },
     show: {
@@ -13,11 +13,13 @@ export const fadeIn = (direction, type, delay, duration) => {
         type: type,
         delay: delay,
         duration: duration,
-        ease: "easeOut",
+        ease: 'easeOut',
       },
     },
   };
 };
+
+
 
 export const fadeInUp = {
   initial: {

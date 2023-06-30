@@ -22,7 +22,8 @@ export const navigation = [
 ];
 
 export const hero = {
-  title: "Servicio técnico de notebook y computadores",
+  pretitle: 'Servicio técnico de notebook',
+  title: "y computadores",
   subtitle: "en el lugar mejor evaluado de Santiago de Chile",
   buttonText: "Ver más",
   video: 'video-hero'

@@ -1,26 +1,53 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/logo-alga.webp";
 import { CgMenuRight, CgClose } from "react-icons/cg";
+import { fadeIn, staggerContainer } from "../variants";
 import { navigation } from "../data";
 import NavMobile from "./NavMobile";
+import { motion } from "framer-motion";
+
+
+const headerVariants = {
+  hidden: {
+    padding: "10px 0 10px 0",
+    background: "none",
+  },
+  show: {
+    padding: "10px 0 10px 0",
+    background: "rgba(0,0,0,92)",
+    transition: {
+      type: "fade",
+    },
+  },
+};
 
 const Header = () => {
-  const [bg, setBg] = useState(false);
-  const [mobileNav, setMobileNav] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      return window.scroll > 50 ? setBg(true) : setBg(false);
+      window.scrollY > 100 ? setIsActive(true) : setIsActive(false);
     });
   });
 
+  // const [bg, setBg] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     return window.scroll > 50 ? setBg(true) : setBg(false);
+  //   });
+  // });
+
   return (
-    <div
-      className={`${
-        bg ? "bg-white" : "bg-red-600"
-      } fixed left-0 w-full py-3 z-20 transition-all duration-200 bg-white`}
+
+    <motion.header
+      variants={headerVariants}
+      initial="hidden"
+      animate={isActive ? "show" : ""}
+      className="bg-pink-400 fixed w-full z-50 py-4 transition-all duration-300 "
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto relative">
         <div className="flex lg:justify-between justify-between items-center">
           {/* logo */}
           <a href="#" className="mx-auto lg:m-0">
@@ -31,7 +58,7 @@ const Header = () => {
             onClick={() => setMobileNav(!mobileNav)}
             className=" text-2xl text-white md:hidden lg:text-3xl cursor-pointer"
           >
-            {mobileNav ? <CgClose /> : <CgMenuRight />}
+            {NavMobile ? <CgClose /> : <CgMenuRight />}
           </div>
           {/* nav */}
           <nav className="hidden md:flex">
@@ -60,7 +87,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.header>
   );
 };
 
