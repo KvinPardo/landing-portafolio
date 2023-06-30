@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "../variants";
+import { fadeIn, fadeInLeft, staggerContainer } from "../variants";
 import { hero } from "../data";
 import Video from "/img/algas.mp4";
 
@@ -47,8 +47,8 @@ const Hero = () => {
               {subtitle}
             </motion.p> */}
             <motion.button
-              variants={fadeIn("down", "tween", 0.6, 1.3)}
-              className="text-white text-xl px-[120px] py-2 border drop-shadow-lg lg:mt-12 mt-4 hover:bg-gray-300/50 transition-all duration-300 hover:border-none "
+             variants={fadeIn("right", "tween", 0.4, 1.2)}
+              className="text-white text-xl px-[120px] py-2 border drop-shadow-lg lg:mt-10 mt-4 hover:bg-gray-300/50  hover:border-none "
             >
               {buttonText}
             </motion.button>

@@ -17,10 +17,10 @@ export const hero = {
 };
 
 export const companyFirst = {
-  image: "slider1",
+  image: "company-algas1",
   title: "What is",
   subtitle: "Macro Algae?",
-  text: "Servicio tecnico notebook en providencia con más 20 años de experiencia. Contamos con un servicio de reparacion notebook completo, ofreciendo reparaciones realizadas por expertos para todas las marcas y modelos. tambien somos servicio tecnico computadores estacionarios. Hemos realizado mas de 40.000 reparacion computadores.",
+  text: "Las macroalgas son un recurso natural del mar con propiedades renovables y rentables.",
   items: [
     {
       title: "48000 Equipos Reparados",
@@ -41,7 +41,7 @@ export const companyFirst = {
 };
 
 export const companySecond = {
-  imageSecond: "slider2",
+  imageSecond: "company-algas2",
   itemsSecond: [
     {
       titleSecond:

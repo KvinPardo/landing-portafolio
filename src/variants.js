@@ -23,7 +23,7 @@ export const fadeIn = (direction, type, delay, duration) => {
 
 export const fadeInUp = {
   initial: {
-    y: 70,
+    y: 40,
     opacity: 0,
   },
   animate: {

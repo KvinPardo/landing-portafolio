@@ -22,13 +22,13 @@ const Company = () => {
         >
           <motion.h1
             variants={fadeIn("down", "tween", 0.4, 1.1)}
-            className="lg:text-4xl font-bold uppercase text-5xl"
+            className="lg:text-4xl font-bold uppercase text-5xl text-[#FFC000]"
           >
             {title}
           </motion.h1>
           <motion.p
             variants={fadeIn("left", "tween", 0.8, 1.1)}
-            className="lg:text-6xl uppercase text-3xl"
+            className="lg:text-6xl uppercase text-3xl text-[#FFC000]"
           >
             {subtitle}
           </motion.p>
