@@ -14,7 +14,7 @@ const Accordion = ({ accordion }) => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className="drop-shadow-primary bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center"
+        className=" bg-white cursor-pointer rounded-[10px] h-[90px] px-[35px] flex items-center"
       >
         <div className="w-full flex justify-between items-center">
           {/* title */}
@@ -41,7 +41,7 @@ const Accordion = ({ accordion }) => {
             : "max-h-0"
         } h-[160px] overflow-hidden transition-all`}
       >
-        <p className=" lead leading-[30px] mt-2">{answer}</p>
+        <p className="lead leading-[30px] mt-2">{answer}</p>
       </div>
     </motion.div>
   );

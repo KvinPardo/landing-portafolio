@@ -29,8 +29,9 @@ export default {
       },
       backgroundImage: {
         hero: 'url("/src/assets/slider1.jpg")',
-        contact: 'url("/img/contact.jpg")',
+        contact: 'url("/img/algas-contacto.jpg")',
         faq: 'url("/img/faqImage.jpg")',
+        algas: 'url("/img/algas-acordeon.jpg")'
       }
       
     },

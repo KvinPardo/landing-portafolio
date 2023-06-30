@@ -2,22 +2,22 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="section lg:mt-20">
+    <section className="section lg:mt-20 lg:pb-[100px]">
       <div className="container mx-auto">
-        <div className="bg-contact flex flex-col lg:flex-row lg:gap-x-[74px] bg-no-repeat bg-cover min-h-[650px]">
+        <div className="flex flex-col lg:flex-row lg:gap-x-[74px] bg-no-repeat bg-center bg-cover min-h-[650px]">
           {/* text */}
-          <div className="flex-1 flex flex-col justify-center pl-8">
-            <h2 className="mb-3 lg:mb-7 lg:text-4xl font-bold text-white text-2xl mt-12">
+          <div className="flex-1 flex flex-col justify-center pl-8 ">
+            <h2 className="mb-3 lg:mb-7 lg:text-4xl font-bold text-black text-2xl mt-12">
               Contact us and our specialists will help you
             </h2>
-            <p className="mb-7 lg:mb-0 text-xl text-white drop-shadow-2xl">
+            <p className="mb-7 lg:mb-0 text-2xl text-whgray-400ite drop-shadow-2xl ">
               Our team of specialists, stand out for being the best in the
               market, your computer is safe with us
             </p>
           </div>
 
           {/* form */}
-          <form className="flex-1 shadow-2xl p-5 lg:p-12 flex flex-col gap-y-5 max-h-[650px] backdrop-blur-lg">
+          <form className="bg-contact bg-no-repeat bg-center bg-cover flex-1 shadow-2xl p-5 lg:p-12 flex flex-col gap-y-5 max-h-[650px] backdrop-blur-lg rounded-md">
             <input
               className="form-control shadow-lg"
               placeholder="First name"

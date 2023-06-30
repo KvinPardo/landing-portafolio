@@ -3,7 +3,7 @@ import Header from "./Header";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../variants";
 import { hero } from "../data";
-import Video from "/img/video-hero.mp4";
+import Video from "/img/algas.mp4";
 
 // import VideoHero from "../assets/video-hero.mp4";
 
@@ -24,8 +24,8 @@ const Hero = () => {
         <div className="container mx-auto relative">
           <motion.div
             variants={staggerContainer(0.3, 1)}
-            initial='hidden'
-            whileInView={'show'}
+            initial="hidden"
+            whileInView={"show"}
             className="absolute lg:top-[-450px] top-[-200px] left-0 flex flex-col justify-center items-center w-full h-full px-4"
           >
             <motion.h1
@@ -35,20 +35,20 @@ const Hero = () => {
               {pretitle}
             </motion.h1>
             <motion.h3
-              variants={fadeIn("right", "tween", 0.4, 1.4)}
-              className="text-white uppercase lg:text-4xl tracking-wider w-full text-center font-bold text-2xl"
+              variants={fadeIn("right", "tween", 0.4, 1.2)}
+              className="text-[#FFC000] uppercase lg:text-4xl tracking-wider w-full text-center font-bold text-2xl"
             >
               {title}
             </motion.h3>
-            <motion.p
+            {/* <motion.p
               variants={fadeIn("up", "tween", 0.6, 1.1)}
               className="text-white lg:text-2xl text-2xl w-full text-center text-[14px]"
             >
               {subtitle}
-            </motion.p>
+            </motion.p> */}
             <motion.button
-              variants={fadeIn("down", "tween", 0.6, 1.1)}
-              className="text-white text-xl px-[120px] py-2 border drop-shadow-lg lg:mt-12 mt-4"
+              variants={fadeIn("down", "tween", 0.6, 1.3)}
+              className="text-white text-xl px-[120px] py-2 border drop-shadow-lg lg:mt-12 mt-4 hover:bg-gray-300/50 transition-all duration-300 hover:border-none "
             >
               {buttonText}
             </motion.button>

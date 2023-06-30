@@ -9,7 +9,7 @@ const Faq = () => {
   const {pretitle, title, accordions, imageFaq } = faqData
 
   return (
-    <section className="section bg-faq bg-cover w-full bg-center bg-no-repeat opacity-80 lg:mt-20 min-h-[1150px] relative">
+    <section className="section bg-algas bg-cover w-full bg-center bg-no-repeat opacity-80 lg:mt-20 min-h-[1150px] relative">
       <div className="container mx-auto">
         {/* Top */}
         <motion.div 
@@ -23,7 +23,7 @@ const Faq = () => {
             variants={fadeInRight}
             className="lg:max-w-[45%] z-20 drop-shadow-tertiary">
             <h3 className="text-5xl uppercase text-black drop-shadow-tertiary">{pretitle}</h3>
-            <h2 className="mb-6 lg:mb-12 drop-shadow-tertiary text-black/70">{title}</h2>
+            <h2 className="mb-6 lg:mb-12 drop-shadow-tertiary text-[#FFC000]">{title}</h2>
           </motion.div>
         
          

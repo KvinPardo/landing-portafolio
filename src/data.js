@@ -1,18 +1,17 @@
 export const navData = {
   items: [
-    { href: '/', name: 'Home' },
-    { href: '/', name: 'About' },
-    { href: '/', name: 'Gallery' },
-    { href: '/', name: 'Interview' },
-    { href: '/', name: 'Articles' },
+    { href: '/', name: 'About us' },
+    { href: '/', name: 'Service' },
+    { href: '/', name: 'Team' },
+    { href: '/', name: 'Blog' },
     { href: '/', name: 'Contact' },
   ],
 };
 
 export const hero = {
-  pretitle: "Servicio técnico de notebook",
-  title: "y computadores",
-  subtitle: "en el lugar mejor evaluado de Santiago de Chile",
+  pretitle: "CARBON SINK TO",
+  title: "BIO PRODUCT",
+  // subtitle: "en el lugar mejor evaluado de Santiago de Chile",
   buttonText: "Ver más",
   video: "video-hero",
 };
