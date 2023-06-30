@@ -23,19 +23,19 @@ export const companyFirst = {
   text: "Las macroalgas son un recurso natural del mar con propiedades renovables y rentables.",
   items: [
     {
-      title: "48000 Equipos Reparados",
+      title: "Co2",
       subtitle:
-        "En NBK servicio técnico computadores, nos enorgullece entregar un diagnóstico correcto, y proponer una reparación  que entrega a nuestros clientes la reparación de notebook más económica  y eficiente. Nosotros ofrecemos una experiencia de reparación de notebook sin presión, sin estrés con una clara comunicación por correo electrónico del diagnóstico y un presupuesto de reparación para tu notebook.",
+        "Es un sumidero de carbono natural.",
     },
     {
-      title: "20 años Reparando",
+      title: "Water Filtración",
       subtitle:
-        "Para que puedas tomar la decisión de reparar tu laptop sin estrés, ofrecemos diagnostico totalmente gratuito en 24 a 48 horas, solo procedemos con la reparacion computadores cuando nos das la aprobación del presupuesto para tu portátil.",
+        "Filtración/remediación de agua absorción de metales pesados"
     },
     {
-      title: "Empresas Felices",
+      title: "Oxígeno",
       subtitle:
-        "si la reparación computadores no soluciona el problema por el cual trajiste tu portátil no cancelas nada.",
+        "Produce oxígeno y atrae la vida marina",
     },
   ],
 };
@@ -45,20 +45,20 @@ export const companySecond = {
   itemsSecond: [
     {
       titleSecond:
-        "¿Cuál es la experiencia de su servicio técnico informatico?",
+        "Combustible",
       subtitleSecond:
-        "Debes estar seguro que el técnico que eliges tiene los conocimientos para poder resolver el problema con tu notebook con 20 años reparando notebook en Santiago el servicio tecnico notebook en providencia NBK puede darte la tranquilidad que sabemos lo que estamos haciendo, contamos con una comunidad de clientes antiguos que nos han traído sus notebook desde el primero que compraron él hace más de 20 años",
+        "1.500 t de nueva generación producción de bioetanol. 28.5000 t de mezcla de biocombustibles",
     },
     {
       titleSecond:
-        "¿Pueden salvar mis archivos en el disco duro en mi notebook?",
+        "Fertilizantes",
       subtitleSecond:
-        "Incluso si perdiste acceso a tus fotos y archivos nuestros técnicos aun deberían poder ingresar y respaldar tu información, el 80 por ciento de las veces esto es verdad y en raras ocasiones no es posibles.",
+        "Biomasa para Fertilizantes",
     },
     {
-      titleSecond: "¿Que marcas de notebook pueden diagnosticar?",
+      titleSecond: "Bioplástico",
       subtitleSecond:
-        "reparamos todas las marcas y modelos desde las más conocidas como HP,  DELL,  LENOVO,  HUAWEI,  ASUS,  ACER  hasta las menos vistas en el mercado como Alienware, Xvision, Packerdbell",
+        "Bioplástico y otros bioproductos",
     },
   ],
 };

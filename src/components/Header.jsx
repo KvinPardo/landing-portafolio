@@ -25,7 +25,7 @@ const Header = () => {
     <header
       className={`${
         isActive
-          ? "bg-black/90 h-[90px] lg:h-[90px]"
+          ? "bg-[#02175D] h-[90px] lg:h-[90px]"
           : "bg-none h-[90px] lg:h-[90px]"
       } fixed left-0 right-0 ${
         navMobile ? "bg-white" : ""
@@ -44,7 +44,7 @@ const Header = () => {
         {/* nav menu btn - showin por default*/}
         <div
           onClick={() => setNavMobile(!navMobile)}
-          className="xl:hidden absolute right-[5%] bg-dark text-white p-2 rounded-md cursor-pointer "
+          className="xl:hidden absolute right-[5%]  text-white p-2 rounded-md cursor-pointer "
         >
           {navMobile ? <RiCloseFill className={`${navMobile ? "text-black" : "text-white"} text-2xl`}/> : <FiMenu className="text-2xl"/>}
           {/* <FiMenu

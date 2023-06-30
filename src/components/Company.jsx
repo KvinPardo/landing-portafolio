@@ -8,8 +8,7 @@ import { fadeIn, staggerContainer } from "../variants";
 const Company = () => {
   // Destructure company
   const { title, subtitle, text, image, items } = companyFirst;
-  const { imageSecond, itemsSecond } =
-    companySecond;
+  const { imageSecond, itemsSecond } = companySecond;
 
   return (
     <>
@@ -22,13 +21,13 @@ const Company = () => {
         >
           <motion.h1
             variants={fadeIn("down", "tween", 0.4, 1.1)}
-            className="lg:text-4xl font-bold uppercase text-5xl text-[#FFC000]"
+            className="lg:text-4xl  uppercase text-5xl text-[#FFC000]"
           >
             {title}
           </motion.h1>
           <motion.p
             variants={fadeIn("left", "tween", 0.8, 1.1)}
-            className="lg:text-6xl uppercase text-3xl text-[#FFC000]"
+            className="lg:text-6xl font-bold uppercase text-3xl text-[#FFC000]"
           >
             {subtitle}
           </motion.p>
@@ -43,6 +42,14 @@ const Company = () => {
 
       <section className="section">
         <div className="container mx-auto">
+          <div>
+            <h3 className="text-[#5DE1E6] text-4xl font-bold uppercase pt-4">
+              Primer Paso
+            </h3>
+            <p className="text-[#02175D] text-2xl pb-6">
+              PARA CARBONO AZUL EN PRODUCTOS
+            </p>
+          </div>
           <motion.div
             variants={staggerContainer(0.3, 1)}
             initial="hidden"
@@ -62,6 +69,11 @@ const Company = () => {
             </motion.div>
             {/* text */}
             <div className="flex-1 flex flex-col justify-end lg:justify-center">
+              <div className="flex lg:last:mb-0 py-4 pl-7">
+                <h3 className="text-[#FFC000] text-4xl font-bold uppercase">
+                  Farm
+                </h3>
+              </div>
               {/* items */}
               <div>
                 {items.map((item, index) => {
@@ -105,11 +117,23 @@ const Company = () => {
         </div>
       </section>
 
-      <section className="section p-0 lg:py-[70px]">
+      <section className="section p-0 lg:py-[50px]">
         <div className="container mx-auto">
+          <div className="flex justify-end">
+            <h3 className="text-[#5DE1E6] text-4xl font-bold uppercase pt-4 lg:pb-12">
+              Segundo Paso
+            </h3>
+          </div>
+
           <div className="flex flex-col lg:flex-row lg:gap-x-[100px] ">
             {/* text */}
+
             <div className="flex-1 lg:-order-1 flex flex-col justify-end lg:justify-center">
+              <div className="flex lg:last:mb-0 py-4 pl-7">
+                <h3 className="text-[#FFC000] text-4xl font-bold uppercase">
+                  Bio Products
+                </h3>
+              </div>
               {/* items */}
               <div>
                 {itemsSecond.map((item, index) => {
