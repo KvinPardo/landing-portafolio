@@ -1,7 +1,7 @@
 import React from "react";
 
 // import logo
-import Logo from "../assets/logo-alga.webp";
+import Logo from '/img/logo-alga.webp'
 
 // import icons
 import { FaYoutube, FaInstagram, FaWhatsapp } from "react-icons/fa";

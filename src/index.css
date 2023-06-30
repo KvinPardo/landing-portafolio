@@ -15,6 +15,9 @@
   .subtitle {
     @apply text-[18px] lg:text-[20px] leading-relaxed mb-5 lg:mb-9;
   }
+  .link {
+    @apply uppercase font-primary tracking-[0.08em];
+  }
   .section-lg {
     @apply py-[150px];
   }

@@ -1,93 +1,72 @@
-import React, { useEffect, useState } from "react";
-import Logo from "../assets/logo-alga.webp";
-import { CgMenuRight, CgClose } from "react-icons/cg";
-import { fadeIn, staggerContainer } from "../variants";
-import { navigation } from "../data";
+import React, { useState, useEffect } from "react";
+import Nav from "./Nav";
 import NavMobile from "./NavMobile";
-import { motion } from "framer-motion";
 
+import { FiMenu } from "react-icons/fi";
+import { RiCloseFill } from "react-icons/ri";
 
-const headerVariants = {
-  hidden: {
-    padding: "10px 0 10px 0",
-    background: "none",
-  },
-  show: {
-    padding: "10px 0 10px 0",
-    background: "rgba(0,0,0,92)",
-    transition: {
-      type: "fade",
-    },
-  },
-};
+import Logo from "/img/logo-alga.webp";
+import Socials from "./Socials";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
+  // nav mobile state
+  const [navMobile, setNavMobile] = useState(false);
+
+  // Scroll event
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 100 ? setIsActive(true) : setIsActive(false);
+      window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
     });
   });
 
-  // const [bg, setBg] = useState(false);
-  const [mobileNav, setMobileNav] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     return window.scroll > 50 ? setBg(true) : setBg(false);
-  //   });
-  // });
-
   return (
-
-    <motion.header
-      variants={headerVariants}
-      initial="hidden"
-      animate={isActive ? "show" : ""}
-      className="fixed w-full z-50 py-4 transition-all duration-300"
+    <header
+      className={`${
+        isActive
+          ? "bg-black/90 h-[90px] lg:h-[90px]"
+          : "bg-none h-[90px] lg:h-[90px]"
+      } fixed left-0 right-0 ${
+        navMobile ? "bg-white" : ""
+      } z-10 w-full mx-auto transition-all duration-300`}
     >
-      <div className="container mx-auto relative">
-        <div className="flex lg:justify-between justify-between items-center">
-          {/* logo */}
-          <a href="#" className="mx-auto lg:m-0">
-            <img className="" src={Logo} alt="" />
-          </a>
-          {/* menu icon */}
-          <div
-            onClick={() => setMobileNav(!mobileNav)}
-            className=" text-2xl text-white md:hidden lg:text-3xl cursor-pointer"
-          >
-            {NavMobile ? <CgClose /> : <CgMenuRight />}
-          </div>
-          {/* nav */}
-          <nav className="hidden lg:flex">
-            <ul className="md:flex md:gap-x-12 ">
-              {navigation.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <a
-                      className="capitalize text-white hover:border-b transition-all"
-                      href={item.href}
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-          {/* nav mobile */}
-          <div
-            className={`${
-              mobileNav ? "left-0" : "-left-full"
-            } md:hidden fixed bottom-0 w-full max-w-xs h-screen transition-all`}
-          >
-            <NavMobile />
-          </div>
+      <div className="flex justify-evenly items-center h-full pl-[50px] pr-[60px]">
+        {/* logo */}
+        <a href="">
+          <img src={Logo} alt="" className="" />
+        </a>
+        {/* nav - inicial escondido - en desktop svisible */}
+        <div className="hidden xl:flex">
+          <Nav />
+        </div>
+
+        {/* nav menu btn - showin por default*/}
+        <div
+          onClick={() => setNavMobile(!navMobile)}
+          className="xl:hidden absolute right-[5%] bg-dark text-white p-2 rounded-md cursor-pointer "
+        >
+          {navMobile ? <RiCloseFill className={`${navMobile ? "text-black" : "text-white"} text-2xl`}/> : <FiMenu className="text-2xl"/>}
+          {/* <FiMenu
+            className={`${navMobile ? "text-black" : "text-white"} text-2xl `}
+          /> */}
+        </div>
+
+        {/*  Desktop */}
+        <div
+          className={`${navMobile ? "max-h-full" : "max-h-0"} 
+          ${
+            isActive ? "top-[90px] lg:top-[90px]" : "top-[90px] lg:top-[90px]"
+          } fixed bg-white w-full h-full left-0 -z-10 transition-all duration-300`}
+        >
+          <NavMobile />
+        </div>
+        {/* Social Icons */}
+        <div className="hidden">
+          <Socials />
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 };
 

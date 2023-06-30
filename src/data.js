@@ -1,25 +1,13 @@
-export const navigation = [
-  {
-    name: "about us",
-    href: "aboutus",
-  },
-  {
-    name: "service",
-    href: "service",
-  },
-  {
-    name: "team",
-    href: "team",
-  },
-  {
-    name: "blog",
-    href: "blog",
-  },
-  {
-    name: "contact",
-    href: "contact",
-  },
-];
+export const navData = {
+  items: [
+    { href: '/', name: 'Home' },
+    { href: '/', name: 'About' },
+    { href: '/', name: 'Gallery' },
+    { href: '/', name: 'Interview' },
+    { href: '/', name: 'Articles' },
+    { href: '/', name: 'Contact' },
+  ],
+};
 
 export const hero = {
   pretitle: "Servicio técnico de notebook",
