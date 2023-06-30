@@ -17,19 +17,19 @@ const Header = () => {
   return (
     <div
       className={`${
-        bg ? "py-4 lg:py-4" : "bg-none py-2"
-      } fixed left-0 w-full py-3 z-20 transition-all duration-200`}
+        bg ? "bg-white" : "bg-red-600"
+      } fixed left-0 w-full py-3 z-20 transition-all duration-200 bg-white`}
     >
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex lg:justify-between justify-between items-center">
           {/* logo */}
-          <a href="#">
+          <a href="#" className="mx-auto lg:m-0">
             <img className="" src={Logo} alt="" />
           </a>
           {/* menu icon */}
           <div
             onClick={() => setMobileNav(!mobileNav)}
-            className="text-2xl text-white md:hidden lg:text-3xl cursor-pointer"
+            className=" text-2xl text-white md:hidden lg:text-3xl cursor-pointer"
           >
             {mobileNav ? <CgClose /> : <CgMenuRight />}
           </div>

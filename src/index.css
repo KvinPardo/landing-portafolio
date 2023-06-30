@@ -15,4 +15,13 @@
   .subtitle {
     @apply text-[18px] lg:text-[20px] leading-relaxed mb-5 lg:mb-9;
   }
+  .section-lg {
+    @apply py-[150px];
+  }
+  .btn-lg {
+    @apply h-[58px] rounded-md px-[40px];
+  }
+  .form-control {
+    @apply h-[58px] border rounded pl-6 outline-none;
+  }
 }
