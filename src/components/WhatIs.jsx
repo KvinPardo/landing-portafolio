@@ -1,4 +1,4 @@
-import { farm } from "../data"
+
 
 
 const WhatIs = () => {

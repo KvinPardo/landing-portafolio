@@ -10,10 +10,10 @@ const Company = () => {
   return (
     <section className="section">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:gap-x-[100px] h-[600px]">
+        <div className="flex flex-col lg:flex-row lg:gap-x-[100px] ">
           {/* image */}
-          <div className="flex-1 order-1 lg:-order-1 w-full h-full">
-            <img src={Imagen} alt="" className="w-full h-full object-cover" />
+          <div className="flex-1 order-1 lg:-order-1 w-full ">
+            <img src={Imagen} alt="" className="w-full h-[400px] lg:h-[500px] object-cover rounded-lg" />
           </div>
           {/* text */}
           <div className="flex-1 flex flex-col justify-end lg:justify-center">
@@ -30,7 +30,7 @@ const Company = () => {
                       <IoIosCheckmarkCircle />
                     </div>
                     <div>
-                      <h4>{title}</h4>
+                      <h4 className="text-base lg:text-xl font-semibold mb-3">{title}</h4>
                       <p>{subtitle}</p>
                     </div>
                   </div>
