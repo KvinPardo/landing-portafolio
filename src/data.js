@@ -9,8 +9,8 @@ export const navData = {
 };
 
 export const hero = {
-  pretitle: "CARBON SINK TO",
-  title: "BIO PRODUCT",
+  pretitle: "SUMIDERO DE CARBONO",
+  title: "A PRODUCTO BIO",
   // subtitle: "en el lugar mejor evaluado de Santiago de Chile",
   buttonText: "Ver más",
   video: "video-hero",
