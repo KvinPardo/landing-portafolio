@@ -18,25 +18,25 @@ const Pricing = () => {
         </div>
 
         {/* cards */}
-        <div className="flex flex-col mx-auto items-center gap-y-12 lg:flex-row lg:gap-x-[35px] px-4 lg:px-0">
+        <div className="flex flex-col mx-auto items-center gap-y-12 lg:flex-row lg:gap-x-[35px] px-4 lg:px-0 overflow-hidden">
           {pricing.map((card, currentIndex) => {
             // Destructure cards
             const { title, list, buttonText, image } = card;
             return (
               <div
                 onClick={() => setIndex(currentIndex)}
-                className="bg-white w-full max-w-[368px] min-h-[660px] h-full cursor-pointer relative hover:border hover:border-[#262626] hover:scale-105 transition-all duration-300 group"
+                className="bg-white w-full max-w-[368px] overflow-hidden min-h-[660px] h-full cursor-pointer relative  hover:scale-105 transition-all duration-300 group"
                 key={currentIndex}
               >
                 {/* card top */}
                 <div
                   className={`${
                     index === currentIndex
-                      ? "bg-[#262626] text-white "
+                      ? "bg-[#FFC000] text-white "
                       : "bg-white text-black "
-                  } text-center pt-[50px] pb-[34px] border-b transition relative group-hover:bg-[#262626] group-hover:text-white`}
+                  } text-center pt-[50px] pb-[34px] border-b transition relative group-hover:bg-[#ffbf00c3] group-hover:text-white`}
                 >
-                  <div className="text-[24px] font-medium mb-[10px] flex justify-center items-center">
+                  <div className="text-[24px] font-medium mb-[10px] flex justify-center items-center overflow-hidden">
                     <img
                       src={image}
                       alt=""
@@ -44,12 +44,12 @@ const Pricing = () => {
                     />
                   </div>
                 </div>
-                <div className="px-[30px] pt-[18px] pb-[30px]">
+                <div className="px-[30px] pt-[18px] pb-[30px] ">
                   <div className="text-[34px] font-semibold">
                     <h3 className="text-[16px]">{title}</h3>
                   </div>
                   {/* card list */}
-                  <ul className="flex flex-col gap-5 mb-10 ">
+                  <ul className="flex flex-col gap-1 mb-10 overflow-hidden">
                     {list.map((item, index) => {
                       // destructure item
                       const { name } = item;
@@ -59,7 +59,7 @@ const Pricing = () => {
                           key={index}
                         >
                           <div className="flex items-center gap-4 justify-center p-4">
-                            <BsCheck className="w-7 h-7 text-2xl bg-green-100 text-green-300 rounded-full" />
+                            {/* <BsCheck className="w-7 h-7 text-2xl bg-green-100 text-green-300 rounded-full" /> */}
                             <p className="text-[14px]">{name}</p>
                           </div>
                         </li>
@@ -72,8 +72,8 @@ const Pricing = () => {
                     <button
                       className={`${
                         index === currentIndex
-                          ? "bg-[#727272] text-white"
-                          : "bg-white "
+                          ? "bg-green-400 text-white font-bold"
+                          : "bg-white"
                       } w-full h-[50px] rounded border  flex items-center justify-center transition relative text-orange`}
                     >
                       {buttonText}
@@ -81,8 +81,8 @@ const Pricing = () => {
                       <div
                         className={`${
                           index === currentIndex
-                            ? "bg-[#000000]"
-                            : "bg-[#989898]"
+                            ? "bg-green-600/60"
+                            : "bg-green-600 "
                         } w-[50px] h-[50px] flex justify-center items-center absolute right-0 rounded text-white`}
                       >
                         <FiChevronRight />

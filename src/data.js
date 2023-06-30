@@ -144,11 +144,11 @@ export const pricing = [
       },
       {
         image: '/img/fuel.webp',
-        name: "",
+        name: " Limpia el agua en áreas industriales contaminadas.",
       },
       {
         image: '/img/resource.webp',
-        name: "Las algas absorben 2,7 toneladas de CO2 por día por acre (1 acre de un bosque de árboles absorbe 2,5 toneladas por año). Limpia el agua en áreas industriales contaminadas.",
+        name: "Las algas absorben 2,7 toneladas de CO2 por día por acre (1 acre de un bosque de árboles absorbe 2,5 toneladas por año).",
       },
     ],
     buttonText: "Ver más",
