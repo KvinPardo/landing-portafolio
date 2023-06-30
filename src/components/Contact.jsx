@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="section lg:mt-20">
       <div className="container mx-auto">
-        <div className="bg-whatis flex flex-col lg:flex-row lg:gap-x-[74px] bg-no-repeat bg-cover min-h-[650px]">
+        <div className="bg-contact flex flex-col lg:flex-row lg:gap-x-[74px] bg-no-repeat bg-cover min-h-[650px]">
           {/* text */}
           <div className="flex-1 flex flex-col justify-center pl-8">
             <h2 className="mb-3 lg:mb-7 lg:text-4xl font-bold text-white text-2xl mt-12">

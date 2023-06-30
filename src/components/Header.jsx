@@ -45,7 +45,7 @@ const Header = () => {
       variants={headerVariants}
       initial="hidden"
       animate={isActive ? "show" : ""}
-      className="bg-pink-400 fixed w-full z-50 py-4 transition-all duration-300 "
+      className="fixed w-full z-50 py-4 transition-all duration-300"
     >
       <div className="container mx-auto relative">
         <div className="flex lg:justify-between justify-between items-center">
@@ -61,7 +61,7 @@ const Header = () => {
             {NavMobile ? <CgClose /> : <CgMenuRight />}
           </div>
           {/* nav */}
-          <nav className="hidden md:flex">
+          <nav className="hidden lg:flex">
             <ul className="md:flex md:gap-x-12 ">
               {navigation.map((item, index) => {
                 return (

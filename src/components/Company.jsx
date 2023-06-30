@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from "../variants";
 const Company = () => {
   // Destructure company
   const { title, subtitle, text, image, items } = companyFirst;
-  const { titleSecond, subtitleSecond, imageSecond, itemsSecond } =
+  const { imageSecond, itemsSecond } =
     companySecond;
 
   return (

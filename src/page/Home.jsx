@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import WhatIs from '../components/WhatIs'
+
 import Company from '../components/Company'
 import Slider from '../components/Slider'
 import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import Pricing from '../components/Pricing'
+import Faq from '../components/Faq'
 
 const Home = () => {
   return (
@@ -14,9 +15,8 @@ const Home = () => {
       <Header />
       <Hero />
       <Company />
-      <WhatIs />
       <Pricing />
-
+      <Faq/>
       
       <Contact/>
       <Footer />

@@ -30,7 +30,7 @@ export default {
       backgroundImage: {
         hero: 'url("/src/assets/slider1.jpg")',
         contact: 'url("/img/contact.jpg")',
-        whatis: 'url("/img/whatis.jpg")',
+        faq: 'url("/img/faqImage.jpg")',
       }
       
     },
